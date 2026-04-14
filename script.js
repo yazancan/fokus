@@ -42,7 +42,7 @@ longoBt.addEventListener("click", () => {
 });
 
 function alterarContexto(contexto) {
-  mostrarTempo()
+  mostrarTempo();
   botoes.forEach(function (contexto) {
     contexto.classList.remove("active");
   });
@@ -83,16 +83,16 @@ const contagemRegressiva = () => {
   if (tempoDecorridoEmSegundos <= 0) {
     musicaZero.play();
     alert("tempo finalizado");
-    const focoAtivo = html.getAttribute('data-contexto') == 'foco';
+    const focoAtivo = html.getAttribute("data-contexto") == "foco";
     if (focoAtivo) {
-      const evento = new CustomEvent('FocoFinalizado');
+      const evento = new CustomEvent("FocoFinalizado");
       document.dispatchEvent(evento);
-    };
+    }
     zerar();
     return;
   }
   tempoDecorridoEmSegundos -= 1;
-  mostrarTempo()
+  mostrarTempo();
 };
 
 startPauseBt.addEventListener("click", iniciarOuPausar);
@@ -116,10 +116,13 @@ function zerar() {
   intervaloId = null;
 }
 
-function mostrarTempo () {
+function mostrarTempo() {
   const tempo = new Date(tempoDecorridoEmSegundos * 1000);
-  const tempoFormatado = tempo.toLocaleTimeString('pt-BR', {minute: '2-digit', second: '2-digit'})
-  tempoNaTela.innerHTML = `${tempoFormatado}`
+  const tempoFormatado = tempo.toLocaleTimeString("pt-BR", {
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  tempoNaTela.innerHTML = `${tempoFormatado}`;
 }
 
-mostrarTempo()
+mostrarTempo();
