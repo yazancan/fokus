@@ -30,6 +30,10 @@ Projeto desenvolvido durante a formação de front-end da Alura, com aplicação
 
 <img width="1514" height="941" alt="image" src="https://github.com/user-attachments/assets/0fcb084b-4267-4e4a-ae28-534a9f3439c9" />
 
+## 🔗 Deploy
+
+https://yazancan.github.io/fokus/
+
 ## 📌 Como executar o projeto
 
 1. Clone este repositório:
