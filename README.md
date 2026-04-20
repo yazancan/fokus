@@ -33,9 +33,3 @@ Projeto desenvolvido durante a formação de front-end da Alura, com aplicação
 ## 🔗 Deploy
 
 https://yazancan.github.io/fokus/
-
-## 📌 Como executar o projeto
-
-1. Clone este repositório:
-```bash
-git clone https://github.com/yazancan/fokus.git
